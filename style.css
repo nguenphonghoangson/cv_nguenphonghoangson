@@ -1,19 +1,19 @@
 :root {
-    --dark-bg: #2b2d33;
-    --darker-bg: #23252a;
-    --orange-accent: #ff9626;
-    --orange-hover: #ff8000;
-    --orange-light: #ffb366;
+    --dark-bg: #5B7FBF;
+    --darker-bg: #4A6BA8;
+    --orange-accent: #5B7FBF;
+    --orange-hover: #4A6BA8;
+    --orange-light: #7B9FDF;
     --white: #ffffff;
-    --light-gray: #f5f5f5;
-    --lighter-gray: #fafafa;
-    --text-dark: #2d2d2d;
+    --light-gray: #f8f8f8;
+    --lighter-gray: #f2f2f2;
+    --text-dark: #1a1a1a;
     --text-light: #666666;
     --text-lighter: #999999;
-    --border-color: #e0e0e0;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-    --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+    --border-color: #e8e8e8;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 16px rgba(0,0,0,0.12);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,0.15);
 }
 
 * {
@@ -26,7 +26,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     line-height: 1.7;
     color: var(--text-dark);
-    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
     padding: 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,7 +53,7 @@ body {
 
 /* Sidebar Styles - Dark Background with Gradient */
 .sidebar {
-    background: linear-gradient(180deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
+    background: linear-gradient(180deg, #5B7FBF 0%, #4A6BA8 100%);
     color: var(--white);
     padding: 45px 35px;
     position: relative;
@@ -66,7 +66,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--orange-accent) 0%, var(--orange-light) 100%);
+    background: linear-gradient(90deg, #4A6BA8 0%, #7B9FDF 100%);
 }
 
 /* Profile Section */
@@ -92,7 +92,7 @@ body {
 
 .profile-image:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(255, 150, 38, 0.3);
+    box-shadow: 0 12px 30px rgba(255, 140, 0, 0.25);
 }
 
 .profile-image::after {
@@ -134,11 +134,11 @@ body {
 .job-title {
     font-size: 1em;
     font-weight: 600;
-    color: var(--orange-accent);
+    color: #5B7FBF;
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 8px 20px;
-    background: rgba(255, 150, 38, 0.1);
+    background: rgba(91, 127, 191, 0.1);
     border-radius: 20px;
     display: inline-block;
 }
@@ -206,7 +206,7 @@ body {
 }
 
 .contact-item i {
-    color: var(--orange-accent);
+    color: #ffffff;
     width: 22px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -255,7 +255,7 @@ body {
     content: '▸';
     position: absolute;
     left: 0;
-    color: var(--orange-accent);
+    color: #ffffff;
     font-weight: bold;
     font-size: 1em;
     top: 0;
@@ -269,7 +269,7 @@ body {
     padding: 12px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 6px;
-    border-left: 3px solid var(--orange-accent);
+    border-left: 3px solid #ffffff;
 }
 
 
@@ -315,7 +315,7 @@ body {
     left: 0;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--orange-accent), var(--orange-light));
+    background: linear-gradient(90deg, #5B7FBF, #93C5FD);
     border-radius: 2px;
 }
 
@@ -336,8 +336,7 @@ body {
     color: var(--text-dark);
     margin-bottom: 15px;
     text-align: justify;
-    padding-left: 15px;
-    border-left: 3px solid var(--orange-accent);
+    border-left: 3px solid #5B7FBF;
     background: var(--lighter-gray);
     padding: 15px 15px 15px 20px;
     border-radius: 6px;
@@ -358,7 +357,7 @@ body {
     padding: 25px;
     background: var(--lighter-gray);
     border-radius: 10px;
-    border-left: 4px solid var(--orange-accent);
+    border-left: 4px solid #5B7FBF;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -398,7 +397,7 @@ body {
 .date {
     font-size: 0.88em;
     color: var(--white);
-    background: var(--orange-accent);
+    background: #5B7FBF;
     padding: 6px 16px;
     border-radius: 20px;
     white-space: nowrap;
@@ -432,7 +431,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    color: var(--orange-accent);
+    color: #5B7FBF;
     font-size: 1em;
 }
 
@@ -453,7 +452,7 @@ body {
 }
 
 .exp-content ul li:hover {
-    color: var(--orange-accent);
+    color: #5B7FBF;
     transform: translateX(5px);
 }
 
@@ -462,7 +461,7 @@ body {
     position: absolute;
     left: 5px;
     top: 0;
-    color: var(--orange-accent);
+    color: #5B7FBF;
     font-weight: bold;
     font-size: 1em;
 }
@@ -488,7 +487,7 @@ body {
     position: absolute;
     left: 5px;
     top: 0;
-    color: var(--orange-accent);
+    color: #5B7FBF;
     font-weight: bold;
     font-size: 1em;
 }
@@ -502,7 +501,7 @@ body {
     margin-bottom: 15px;
     text-decoration: none;
     padding: 8px 15px;
-    background: rgba(255, 150, 38, 0.1);
+    background: rgba(91, 127, 191, 0.08);
     border-radius: 6px;
     transition: all 0.3s ease;
     border: 1px solid transparent;
@@ -581,7 +580,6 @@ body {
 .download-btn {
     position: fixed;
     bottom: 30px;
-    background: var(--orange-accent);
     color: var(--white);
     border: none;
     width: 56px;
@@ -589,32 +587,105 @@ body {
     border-radius: 50%;
     font-size: 1.2em;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(255, 150, 38, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1000;
+    animation: pulseButton 2s ease-in-out infinite;
 }
 
-.print-btn {
-    right: 30px;
-}
-
-.download-btn {
-    right: 100px;
-    background: var(--dark-bg);
-    box-shadow: 0 4px 20px rgba(43, 45, 51, 0.4);
+@keyframes pulseButton {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(91, 127, 191, 0.35);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(91, 127, 191, 0.6);
+    }
 }
 
 .print-btn:hover,
 .download-btn:hover {
+    animation: none;
+}
+
+.print-btn {
+    right: 30px;
+    background: linear-gradient(135deg, #5B7FBF 0%, #4A6BA8 100%);
+    box-shadow: 0 4px 20px rgba(91, 127, 191, 0.35);
+    position: relative;
+    overflow: hidden;
+}
+
+.print-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.print-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.print-btn::after {
+    content: 'In CV';
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.print-btn:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.print-btn i,
+.download-btn i {
+    position: relative;
+    z-index: 1;
+}
+
+.download-btn {
+    right: 100px;
+    background: linear-gradient(135deg, #5B7FBF 0%, #4A6BA8 100%);
+    box-shadow: 0 4px 20px rgba(91, 127, 191, 0.4);
+    position: fixed;
+    overflow: hidden;
+}
+
+
+.print-btn:hover,
+.download-btn:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 30px rgba(255, 150, 38, 0.6);
+}
+
+.print-btn:hover {
+    box-shadow: 0 8px 30px rgba(91, 127, 191, 0.5);
+    background: linear-gradient(135deg, #6B8FCF 0%, #5A7BB8 100%);
 }
 
 .download-btn:hover {
-    box-shadow: 0 8px 30px rgba(43, 45, 51, 0.6);
+    box-shadow: 0 8px 30px rgba(91, 127, 191, 0.6);
 }
 
 .print-btn:active,
